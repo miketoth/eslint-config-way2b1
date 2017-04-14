@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-way2b1",
+  "version": "1.0.0",
+  "description": "eslint config based off Airbnb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+      "eslint": ">=3"
+  },
+  "author": "mtoth",
+  "license": "UNLICENSED"
+}
