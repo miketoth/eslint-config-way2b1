@@ -42,7 +42,7 @@ module.exports = {
     //
     "no-cond-assign": 2, // disallow assignment in conditional expressions
     "no-constant-condition": 2, // disallow use of constant expressions in conditions
-    "no-console": [1, { allow: ["error"] }], // disallow use of console (off by default in the node environment)
+    "no-console": [1, { allow: "error" }], // disallow use of console (off by default in the node environment)
     "no-control-regex": 2, // disallow control characters in regular expressions
     "no-debugger": 2, // disallow use of debugger
     "no-dupe-args": 2, // disallow duplicate arguments in functions
