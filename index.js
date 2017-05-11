@@ -8,6 +8,13 @@ module.exports = {
 
   "plugins": ["react"],
 
+  "globals": {
+    "__API_URL__": true,
+    "__WEBSOCKET_URL__": true,
+    "__LOGIN_URL__": true,
+    "APP_VERSION": true
+  }  
+  
   "ecmaFeatures": {
     "arrowFunctions": true,
     "binaryLiterals": true,
