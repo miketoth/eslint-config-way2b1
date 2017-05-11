@@ -7,13 +7,6 @@ module.exports = {
   },
 
   "plugins": ["react"],
-
-  "globals": {
-    "__API_URL__": true,
-    "__WEBSOCKET_URL__": true,
-    "__LOGIN_URL__": true,
-    "APP_VERSION": true
-  }  
   
   "ecmaFeatures": {
     "arrowFunctions": true,
@@ -39,6 +32,13 @@ module.exports = {
     "globalReturn": true,
     "jsx": true
   },
+
+  "globals": {
+    "__API_URL__": false,
+    "__WEBSOCKET_URL__": false,
+    "__LOGIN_URL__": false,
+    "APP_VERSION": false
+  }    
 
   "rules": {
 
