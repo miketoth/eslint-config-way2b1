@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-way2b1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "eslint config based off Airbnb",
   "main": "index.js",
   "scripts": {
