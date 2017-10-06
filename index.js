@@ -60,7 +60,7 @@ module.exports = {
         "no-empty-character-class": 2, // disallow the use of empty character classes in regular expressions
         "no-ex-assign": 2, // disallow assigning to the exception in a catch block
         "no-extra-boolean-cast": 2, // disallow double-negation boolean casts in a boolean context
-        "no-extra-semi": 2, // disallow unnecessary semicolons
+        "no-extra-semi": 1, // warn about unnecessary semicolons
         "no-func-assign": 2, // disallow overwriting functions written as function declarations
         "no-inner-declarations": 2, // disallow function or variable declarations in nested blocks
         "no-invalid-regexp": 2, // disallow invalid regular expression strings in the RegExp constructor
