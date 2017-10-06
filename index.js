@@ -117,6 +117,7 @@ module.exports = {
         "no-undef-init": 2, // disallow use of undefined when initializing variables
         "no-undefined": 2, // disallow use of undefined variable (off by default)
         "no-unused-vars": 1, // disallow declaration of variables that are not used in the code
+        "no-use-before-define": 0, // allow using functions before they're declared
 
         //
         // ECMAScript 6
