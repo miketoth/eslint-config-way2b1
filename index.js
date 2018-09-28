@@ -87,11 +87,8 @@ module.exports = {
             "exports": "always-multiline",
             "functions": "never",
         }],
-        "padding-line-between-statements": [2, // in short, use a blank line (1) after variable declarations (2) before return statement
-            { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
-            { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"] },
-            { "blankLine": "always", "prev": "*", "next": "return" },
-        ],
+        "no-mixed-operators": 2,
+        "no-unused-expressions": 2,
 
         //
         // Best Practices
@@ -134,6 +131,7 @@ module.exports = {
         "no-catch-shadow": 2, // disallow the catch clause parameter name being the same as a variable in the outer scope (off by default in the node environment)
         "no-delete-var": 2, // disallow deletion of variables
         "no-label-var": 2, // disallow labels that share a name with a variable
+        "no-shadow": 2, // disallow variable declarations from shadowing variables declared in the outer scope
         "no-undef": 2, // disallow use of undeclared variables unless mentioned in a /*global */ block
         "no-undef-init": 2, // disallow use of undefined when initializing variables
         "no-undefined": 2, // disallow use of undefined variable (off by default)
