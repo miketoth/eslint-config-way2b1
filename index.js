@@ -74,11 +74,29 @@ module.exports = {
         "valid-typeof": 2, // Ensure that the results of typeof are compared against a valid string
 
         //
+        // Code Style
+        // The goal is to achieve consistent and readable code
+        //
+        "semi": [2, "always"], // require semicolons instead of ASI
+        "quotes": [2, "double"], // enforce the consistent use of double quotes
+        "no-unneeded-ternary": 2, // disallow ternary operators when simpler alternatives exist
+        "comma-dangle": [2, { // require trailing commas for multiline (except function calls - never)
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "never",
+        }],
+        "no-mixed-operators": 2, // disallow mixed binary operators (group with parenthesis)
+        "no-unused-expressions": 2, // disallow unused expressions (no unassigned ternary result)
+
+        //
         // Best Practices
         //
         // These are rules designed to prevent you from making mistakes.
         // They either prescribe a better way of doing something or help you avoid footguns.
         //
+        "curly": 2, // enforce consistent brace style for all control statements
         "eqeqeq": 2, // require the use of === and !==
         "no-eval": 2, // disallow use of eval()
         "no-extend-native": 2, // disallow adding to native types
@@ -113,6 +131,7 @@ module.exports = {
         "no-catch-shadow": 2, // disallow the catch clause parameter name being the same as a variable in the outer scope (off by default in the node environment)
         "no-delete-var": 2, // disallow deletion of variables
         "no-label-var": 2, // disallow labels that share a name with a variable
+        "no-shadow": 1, // disallow variable declarations from shadowing variables declared in the outer scope
         "no-undef": 2, // disallow use of undeclared variables unless mentioned in a /*global */ block
         "no-undef-init": 2, // disallow use of undefined when initializing variables
         "no-undefined": 2, // disallow use of undefined variable (off by default)
@@ -124,7 +143,10 @@ module.exports = {
         //
         // These rules are only relevant to ES6 environments and are off by default.
         //
-        "no-var": 1, // require let or const instead of var (off by default)
+        "no-var": 2, // require let or const instead of var (off by default)
+        "arrow-parens": 2, // require parentheses around arrow function arguments
+        "prefer-const": 2, // require const declarations for variables that are never reassigned after declared
+        "getter-return": 2, // enforce return statements in getters
 
         //
         // eslint-plugin-react
