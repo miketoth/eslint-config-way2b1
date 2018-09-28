@@ -87,8 +87,8 @@ module.exports = {
             "exports": "always-multiline",
             "functions": "never",
         }],
-        "no-mixed-operators": 2,
-        "no-unused-expressions": 2,
+        "no-mixed-operators": 2, // disallow mixed binary operators (group with parenthesis)
+        "no-unused-expressions": 2, // disallow unused expressions (no unassigned ternary result)
 
         //
         // Best Practices
